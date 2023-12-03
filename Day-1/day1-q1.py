@@ -36,13 +36,6 @@ for line_num, line in enumerate(file_lines):
     # Get the first and last digits using regex pattern ^(\d).*\D(\d)$
     both_digits = re.findall(r'\d', line)
 
-    # if there is a number greater than 9 in the both_digits list, then we need to
-    # print a warning
-    for digit in both_digits:
-        if int(digit) > 9:
-            print("WARNING: There is a digit greater than 9 on line " + str(line_num+1))
-
-
     if len(both_digits) < 2:
 
         # find a single digit in the string
@@ -50,10 +43,6 @@ for line_num, line in enumerate(file_lines):
 
         # turn it into an int
         single_digit = int(single_digit.group(0))
-
-        # if the single digit is greater than 9, print a warning
-        if(single_digit > 9):
-            print("WARNING: There is a digit greater than 9 on line " + str(line_num+1))
 
         if(single_digit):
             # Add the single digit to the sum
@@ -64,14 +53,6 @@ for line_num, line in enumerate(file_lines):
 
         # Add the two-digit number to the sum
         sum += int(two_digit_num)
-
-
-
-
-
-
-
-
 
 # Print the sum
 print(sum)
