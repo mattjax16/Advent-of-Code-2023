@@ -43,17 +43,6 @@ number_map digit_map[] = {
 };
 
 
-// Function to search a string for any number substring and return the number
-int find_number(const std::string &str) {
-    for (int i = 0; i < 9; i++) {
-        if (str.find(digit_map[i].string_value) != std::string::npos) {
-            return digit_map[i].number_value;
-        }
-    }
-    return -1;
-}
-
-
 int main(int argc, char *argv[]) {
     // check that a file was passed in
     if (argc < 2) {
