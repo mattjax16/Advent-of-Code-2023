@@ -16,43 +16,49 @@ Consider your entire calibration document. What is the sum of all of the calibra
 '''
 import re
 
-# list of digit names
-digit_names = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+def main():
+    # list of digit names
+        digit_names = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
-# Import the file
-file = open("day_1_q1_input.txt", "r")
+        # Import the file
+        file = open("day_1_q1_input.txt", "r")
 
-# Read the file
-file_contents = file.read()
+        # Read the file
+        file_contents = file.read()
 
-# Split the file into a list of lines
-file_lines = file_contents.splitlines()
+        # Split the file into a list of lines
+        file_lines = file_contents.splitlines()
 
-# Initialize the sum
-sum = 0
+        # Initialize the sum
+        sum = 0
 
-# Loop through each line
-for line_num, line in enumerate(file_lines):
-    # Get the first and last digits using regex pattern ^(\d).*\D(\d)$
-    both_digits = re.findall(r'\d', line)
+        # Loop through each line
+        for line_num, line in enumerate(file_lines):
+            # Get the first and last digits using regex pattern ^(\d).*\D(\d)$
+            both_digits = re.findall(r'\d', line)
 
-    if len(both_digits) < 2:
+            if len(both_digits) < 2:
 
-        # find a single digit in the string
-        single_digit = re.search(r'\d', line)
+                # find a single digit in the string
+                single_digit = re.search(r'\d', line)
 
-        # turn it into an int
-        single_digit = int(single_digit.group(0))
+                # turn it into an int
+                single_digit = int(single_digit.group(0))
 
-        if(single_digit):
-            # Add the single digit to the sum
-            sum += int(single_digit)*11
-    else:
-        #combine the first and last digits into a single two-digit number
-        two_digit_num = both_digits[0] + both_digits[-1]
+                if(single_digit):
+                    # Add the single digit to the sum
+                    sum += int(single_digit)*11
+            else:
+                #combine the first and last digits into a single two-digit number
+                two_digit_num = both_digits[0] + both_digits[-1]
 
-        # Add the two-digit number to the sum
-        sum += int(two_digit_num)
+                # Add the two-digit number to the sum
+                sum += int(two_digit_num)
 
-# Print the sum
-print(sum)
+        # Print the sum
+        print(sum)
+        return
+
+
+if __name__ == "__main__":
+    main()
