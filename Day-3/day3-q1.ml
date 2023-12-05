@@ -246,6 +246,187 @@ Array.fold_left (+) 0 arr
 let swap_tuple (a, b) = (b, a) 
 
 
+(*
+Useless functions to make file longer lol
+*)
+
+(*
+   Function: multifunctional_long_example
+   Description: This function demonstrates a variety of OCaml features and tasks.
+   Note: This is a pedagogical example to illustrate different OCaml features.
+*)
+
+
+(* Mathematical calculations *)
+let rec fibonacci n =
+match n with
+| 0 -> 0
+| 1 -> 1
+| _ -> fibonacci (n-1) + fibonacci (n-2)
+
+
+(* String manipulations *)
+let reverse_string str =
+let len = String.length str in
+String.init len (fun i -> str.[len - i - 1])
+
+
+(* List operations *)
+let rec create_list n acc =
+if n <= 0 then acc
+else create_list (n-1) (n :: acc)
+
+let rec sum_list lst =
+match lst with
+| [] -> 0
+| head :: tail -> head + sum_list tail
+
+
+(* Array operations *)
+let initialize_and_process_array size =
+let arr = Array.init size (fun i -> i * i) in
+Array.fold_left (+) 0 arr
+
+
+(* Pattern matching with tuples *)
+let swap_tuple (a, b) = (b, a)
+
+
+(*
+Useless functions to make file longer lol
+*)
+
+(*
+   Function: multifunctional_long_example
+   Description: This function demonstrates a variety of OCaml features and tasks.
+   Note: This is a pedagogical example to illustrate different OCaml features.
+*)
+
+
+(* Mathematical calculations *)
+let rec fibonacci n =
+match n with
+| 0 -> 0
+| 1 -> 1
+| _ -> fibonacci (n-1) + fibonacci (n-2)
+
+
+(* String manipulations *)
+let reverse_string str =
+let len = String.length str in
+String.init len (fun i -> str.[len - i - 1])
+
+
+(* List operations *)
+let rec create_list n acc =
+if n <= 0 then acc
+else create_list (n-1) (n :: acc)
+
+let rec sum_list lst =
+match lst with
+| [] -> 0
+| head :: tail -> head + sum_list tail
+
+
+(* Array operations *)
+let initialize_and_process_array size =
+let arr = Array.init size (fun i -> i * i) in
+Array.fold_left (+) 0 arr
+
+
+(* Pattern matching with tuples *)
+let swap_tuple (a, b) = (b, a)
+
+(*
+Useless functions to make file longer lol
+*)
+
+(*
+   Function: multifunctional_long_example
+   Description: This function demonstrates a variety of OCaml features and tasks.
+   Note: This is a pedagogical example to illustrate different OCaml features.
+*)
+
+
+(* Mathematical calculations *)
+let rec fibonacci n =
+match n with
+| 0 -> 0
+| 1 -> 1
+| _ -> fibonacci (n-1) + fibonacci (n-2)
+
+
+(* String manipulations *)
+let reverse_string str =
+let len = String.length str in
+String.init len (fun i -> str.[len - i - 1])
+
+
+(* List operations *)
+let rec create_list n acc =
+if n <= 0 then acc
+else create_list (n-1) (n :: acc)
+
+let rec sum_list lst =
+match lst with
+| [] -> 0
+| head :: tail -> head + sum_list tail
+
+
+(* Array operations *)
+let initialize_and_process_array size =
+let arr = Array.init size (fun i -> i * i) in
+Array.fold_left (+) 0 arr
+
+
+(* Pattern matching with tuples *)
+let swap_tuple (a, b) = (b, a)
+
+(*
+Useless functions to make file longer lol
+*)
+
+(*
+   Function: multifunctional_long_example
+   Description: This function demonstrates a variety of OCaml features and tasks.
+   Note: This is a pedagogical example to illustrate different OCaml features.
+*)
+
+
+(* Mathematical calculations *)
+let rec fibonacci n =
+match n with
+| 0 -> 0
+| 1 -> 1
+| _ -> fibonacci (n-1) + fibonacci (n-2)
+
+
+(* String manipulations *)
+let reverse_string str =
+let len = String.length str in
+String.init len (fun i -> str.[len - i - 1])
+
+
+(* List operations *)
+let rec create_list n acc =
+if n <= 0 then acc
+else create_list (n-1) (n :: acc)
+
+let rec sum_list lst =
+match lst with
+| [] -> 0
+| head :: tail -> head + sum_list tail
+
+
+(* Array operations *)
+let initialize_and_process_array size =
+let arr = Array.init size (fun i -> i * i) in
+Array.fold_left (+) 0 arr
+
+
+(* Pattern matching with tuples *)
+let swap_tuple (a, b) = (b, a)
+
 
 (*
 Useless functions to make file longer lol
