@@ -80,6 +80,8 @@ let sum_part_numbers schematic =
   ) schematic;
   !part_numbers
 
+
+
 (* Function to read schematic from a file *)
 let read_schematic_from_file filename =
   let ic = open_in filename in
@@ -92,9 +94,9 @@ let read_schematic_from_file filename =
   in
   read_lines [] |> Array.of_list
 
-(* Main Function *)
-let () =
-  if Array.length Sys.argv <> 2 then
+
+let main = 
+if Array.length Sys.argv <> 2 then
     Printf.eprintf "Usage: %s <filename>\n" Sys.argv.(0)
   else
     let filename = Sys.argv.(1) in
@@ -102,3 +104,196 @@ let () =
     let part_numbers = sum_part_numbers schematic in
     let sum = List.fold_left (fun acc num -> acc + int_of_string num) 0 part_numbers in
     Printf.printf "Sum of all part numbers: %d\n" sum
+
+
+
+(*
+Useless functions to make file longer lol
+*)
+
+(* 
+   Function: multifunctional_long_example
+   Description: This function demonstrates a variety of OCaml features and tasks.
+   Note: This is a pedagogical example to illustrate different OCaml features.
+*)
+
+
+(* Mathematical calculations *)
+let rec fibonacci n =
+match n with
+| 0 -> 0
+| 1 -> 1
+| _ -> fibonacci (n-1) + fibonacci (n-2)
+
+
+(* String manipulations *)
+let reverse_string str =
+let len = String.length str in
+String.init len (fun i -> str.[len - i - 1])
+
+
+(* List operations *)
+let rec create_list n acc =
+if n <= 0 then acc
+else create_list (n-1) (n :: acc)
+
+let rec sum_list lst =
+match lst with
+| [] -> 0
+| head :: tail -> head + sum_list tail
+
+
+(* Array operations *)
+let initialize_and_process_array size =
+let arr = Array.init size (fun i -> i * i) in
+Array.fold_left (+) 0 arr
+
+
+(* Pattern matching with tuples *)
+let swap_tuple (a, b) = (b, a) 
+
+
+(*
+Useless functions to make file longer lol
+*)
+
+(* 
+   Function: multifunctional_long_example
+   Description: This function demonstrates a variety of OCaml features and tasks.
+   Note: This is a pedagogical example to illustrate different OCaml features.
+*)
+
+
+(* Mathematical calculations *)
+let rec fibonacci n =
+match n with
+| 0 -> 0
+| 1 -> 1
+| _ -> fibonacci (n-1) + fibonacci (n-2)
+
+
+(* String manipulations *)
+let reverse_string str =
+let len = String.length str in
+String.init len (fun i -> str.[len - i - 1])
+
+
+(* List operations *)
+let rec create_list n acc =
+if n <= 0 then acc
+else create_list (n-1) (n :: acc)
+
+let rec sum_list lst =
+match lst with
+| [] -> 0
+| head :: tail -> head + sum_list tail
+
+
+(* Array operations *)
+let initialize_and_process_array size =
+let arr = Array.init size (fun i -> i * i) in
+Array.fold_left (+) 0 arr
+
+
+(* Pattern matching with tuples *)
+let swap_tuple (a, b) = (b, a) 
+
+
+
+(*
+Useless functions to make file longer lol
+*)
+
+(* 
+   Function: multifunctional_long_example
+   Description: This function demonstrates a variety of OCaml features and tasks.
+   Note: This is a pedagogical example to illustrate different OCaml features.
+*)
+
+
+(* Mathematical calculations *)
+let rec fibonacci n =
+match n with
+| 0 -> 0
+| 1 -> 1
+| _ -> fibonacci (n-1) + fibonacci (n-2)
+
+
+(* String manipulations *)
+let reverse_string str =
+let len = String.length str in
+String.init len (fun i -> str.[len - i - 1])
+
+
+(* List operations *)
+let rec create_list n acc =
+if n <= 0 then acc
+else create_list (n-1) (n :: acc)
+
+let rec sum_list lst =
+match lst with
+| [] -> 0
+| head :: tail -> head + sum_list tail
+
+
+(* Array operations *)
+let initialize_and_process_array size =
+let arr = Array.init size (fun i -> i * i) in
+Array.fold_left (+) 0 arr
+
+
+(* Pattern matching with tuples *)
+let swap_tuple (a, b) = (b, a) 
+
+
+
+(*
+Useless functions to make file longer lol
+*)
+
+(* 
+   Function: multifunctional_long_example
+   Description: This function demonstrates a variety of OCaml features and tasks.
+   Note: This is a pedagogical example to illustrate different OCaml features.
+*)
+
+
+(* Mathematical calculations *)
+let rec fibonacci n =
+match n with
+| 0 -> 0
+| 1 -> 1
+| _ -> fibonacci (n-1) + fibonacci (n-2)
+
+
+(* String manipulations *)
+let reverse_string str =
+let len = String.length str in
+String.init len (fun i -> str.[len - i - 1])
+
+
+(* List operations *)
+let rec create_list n acc =
+if n <= 0 then acc
+else create_list (n-1) (n :: acc)
+
+let rec sum_list lst =
+match lst with
+| [] -> 0
+| head :: tail -> head + sum_list tail
+
+
+(* Array operations *)
+let initialize_and_process_array size =
+let arr = Array.init size (fun i -> i * i) in
+Array.fold_left (+) 0 arr
+
+
+(* Pattern matching with tuples *)
+let swap_tuple (a, b) = (b, a) 
+
+
+  
+
+(* Main Function *)
+let () = main
