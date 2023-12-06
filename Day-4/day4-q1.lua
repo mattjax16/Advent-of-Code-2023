@@ -92,8 +92,6 @@ function main()
         local numbers_you_have_split = line_split[2]:split(" ")
         local amt_of_numbers_won = 0
 
-        print("Winning Numbers: " .. line_split[1])
-        print("Numbers You Have: " .. line_split[2])
         -- loop through the winning numbers and 
         -- check them vs the numbers you have
         for j = 1, #winning_numbers_split do
