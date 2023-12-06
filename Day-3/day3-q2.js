@@ -152,7 +152,7 @@ const gearRatio = [];
 async function main() {
     const args = process.argv.slice(2);
     if (args.length < 1) {
-        console.log('Usage: node day3-q2.js <input file>');
+        console.log('Usage: bun day3-q2.js <input file>');
         return;
     }
 
