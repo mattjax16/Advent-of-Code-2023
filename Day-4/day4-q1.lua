@@ -86,12 +86,14 @@ function main()
     local total_points = 0
     for i = 1, #lines do
         -- split the line into the winning numbers and the numbers you have
-        
-        local line_split = lines[i]:split("|")
+        local clean_line = lines[i]:split(":")
+        local line_split = clean_line[2]:split("|")
         local winning_numbers_split = line_split[1]:split(" ")
         local numbers_you_have_split = line_split[2]:split(" ")
         local amt_of_numbers_won = 0
 
+        print("Winning Numbers: " .. line_split[1])
+        print("Numbers You Have: " .. line_split[2])
         -- loop through the winning numbers and 
         -- check them vs the numbers you have
         for j = 1, #winning_numbers_split do
