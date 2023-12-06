@@ -176,8 +176,6 @@ def main
 
     puts "The lowest location number that corresponds to any of the initial seed numbers is #{seed_to_location_map.min}"
 
-    # puts "The lowest location number that corresponds to any of the initial seed numbers is #{seed_to_location_map.min}"
-
 end
 
 # call main method
