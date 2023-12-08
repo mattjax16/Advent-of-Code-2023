@@ -7,7 +7,7 @@ begin
   product := 1;
 
   // Assuming four races, you will need to loop over each race's details
-  for i := 1 to 4 do
+  for i := 1 to 1 do
   begin
     readln(totalTime, recordDistance); // Read race details
     ways := 0;
